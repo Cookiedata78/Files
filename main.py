@@ -7,6 +7,8 @@ import shutil
 
 def clean_cache():
     try:
+        base_path=os.getcdw()
+        cache_dir=os.path.join(base_path,"files","cache")
         cache_dir = os.path.expanduser("~/Desktop/Winc project folder/files/cache")
         if os.path.exists(cache_dir):
             # If directory exists, delete contents
